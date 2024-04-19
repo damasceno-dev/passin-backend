@@ -1,0 +1,8 @@
+dotnet ef migrations add CreateProductionTables --project PassIn.Infrastructure
+dotnet ef database update --project PassIn.Infrastructure
+
+//seed database
+dotnet run --project PassIn.Api --launch-profile https -- seed
+
+//dont seed:
+dotnet run --project PassIn.Api --launch-profile https

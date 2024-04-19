@@ -1,0 +1,81 @@
+
+prod:
+    preparativo: 
+        dotnet ef migrations add CreateProductionTables --project PassIn.Infrastructure
+        dotnet ef database update --project PassIn.Infrastructure
+    
+    execução:
+        dotnet run --project PassIn.Api --launch-profile https -- seed
+        
+=> acho que tem que mover o dockerfile para a raiz do projeto
+docker build -t passin:v1 .
+R: tem que rodar na raiz do projeto, dizendo onde está o dockerfile com a flag -f:
+
+docker build -t passin:v1 -f PassIn.Api/Dockerfile .
+
+=> mesmo startando o servidor sql, ele não roda as migrations.. pq?
+R: desisti de rodar as migrations no dockerfile como fez o professor no nlw-devops
+
+docker run -p 8080:8080 --name passin-container-1 passin:v1
+
+=> após rodar o container, ainda não está funcionando.
+https://www.youtube.com/watch?v=qLi2qToXBcQ
+https://www.youtube.com/watch?v=_wp2zJHs9l0
+R: tem que montar um container composto com a base de dados tb. Não está igual a trilha de devops pois a minha base de 
+dados roda em um container
+
+R: aplicando migrations: usando a estratégia de bundle. faz um bundle no build e o copia para o publish. Depois, roda 
+esse bundle no container da aplicação
+RUN dotnet ef migrations bundle -v --force --project PassIn.Infrastructure
+COPY --from=build /src/efbundle .
+
+
+=> a imagem do docker-compose é diferente da do DockerFile
+R: o docker compose up do rider é diferente do docker compose up via console... 
+=> por quê?
+R: Tem que desabilitar o docker fast mode: 
+When you run or debug Docker applications from JetBrains Rider, it uses a Fast mode by default. Docker Fast mode builds and launches the application directly, without the need to build and publish the container. In this mode, only the base stage of the Dockerfile is executed; build, publish, and final are ignored.
+What happens to other stages?
+Dmitry Matveev
+8/28/2023 at 10:02 AM
+Hello,
+Other stages are not executed in fast mode. You can find a more detailed description in this article:
+https://blog.jetbrains.com/dotnet/2023/06/07/...
+
+
+=> efbundle não está achando a base de dados.
+-> vi que é a aplicação toda que não acha, não consigo inserir um evento
+R: funcionou depois que eu comentei as seguintes linhas. Acho que porque eu estava setando DB_host como localhost no 
+hardcode, e o docker precisa que db_host seja passin.db. Mas pra acessar da minha máquina, é com locahost mesmo.
+
+You can use either localhost or passin.db as the host address to connect to the database running in your Docker container, depending on how your Docker setup resolves container names.
+In Docker Compose, services are given a DNS name that corresponds to their service name. So, when you specify DB_HOST=passin.db in your Docker Compose configuration, it should resolve to the IP address of the passin.db container within the Docker network. This allows containers within the same network to communicate with each other using their service names.
+If you find that passin.db doesn't work and you're running DataGrip on the same machine as Docker, you can try using localhost or 127.0.0.1 instead. This is because when DataGrip tries to connect to a service running on the same machine, it typically uses localhost or the loopback address 127.0.0.1.
+
+**Vitória!
+Depois que quase duas semanas, consegui o resultado desejado:
+*rodar a aplicação num container
+*rodar as migrations do lado do servidor, com efbundle (./efbundle)
+*rodar o seed do lado do servidor (dotnet PassIn.Api.dll seed)
+
+Para rodar a aplicação no container, tive que aprender docker-compose, para rodar a aplicação e o servidor na mesma 
+network. Aprendi a setar as variáveis de ambiente, e como se conectar no servidor sql rodando dentro de um docker 
+compose.
+
+Para rodar as migrations do lado do servidor, tive que aprender sobre o efbundle, como gerá-lo do lado do servidor, por 
+que a imagem do rider é diferente da do docker-compose up, e por que a app de dentro do docker não estava reconhecendo o
+ sqlserver (pois eu estava setando hardcoded a variável de ambiente db_host para localhost. só que o servidor é 
+ localhost pra mim, para o app de dentro do docker é passin.db), então eu tive que tirar as variáveis de ambiente do 
+ hardcoded no código, pra deixar o sistema se virar pra saber quando é localhost e quando é passin.db.
+ 
+ Pra rodar a seed do lado do servidor, bastou fazer com que a aplicação parasse se houvesse argumento seed. Assim não 
+ daria conflito de duas aplicações rodando ao mesmo tempo, já que o docker-compose já coloca a aplicação no ar com o 
+ entry point.
+ 
+ **passos para execução:
+ - verificar que o docker-compose configuration está com a opção "Don't use fast mode" habilitada.
+ - rodar o docker compose.
+ - no datagrip, conectando com localhost, sa, e reallyStrongPassword123, criar a base de dados PassInDb (não sei se o 
+ efbundle faz isso automático)
+ - no servidor, na pasta /app, rodar ./efbundle para rodar as migrations
+ - no servidor, na pasta /app, rodar "dotnet PassIn.Api.dll seed" para rodar o seed da base de dados 

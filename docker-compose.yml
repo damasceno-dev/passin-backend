@@ -1,0 +1,33 @@
+﻿networks:
+  passinapp:
+
+services:
+  passin.db:
+    container_name: pass-in-db
+    image: mcr.microsoft.com/mssql/server:latest
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=reallyStrongPwd123
+    networks:
+      - passinapp
+  passin.api:
+    container_name: pass-in-app
+    image: passin:v1
+    build:
+      context: .
+      dockerfile: ./PassIn.Api/Dockerfile      
+      args:
+        - BUILD_TAG=passin:v1
+    ports: 
+      - 8080:8080
+      - 8443:8443
+    depends_on:
+      - passin.db
+    environment:
+      - DB_HOST=passin.db
+      - DB_NAME=PassInDb
+      - DB_SA_PASSWORD=reallyStrongPwd123
+    networks:
+      - passinapp

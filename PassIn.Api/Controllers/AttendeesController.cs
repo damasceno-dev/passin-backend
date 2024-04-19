@@ -1,0 +1,40 @@
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using PassIn.Application.UseCases.Attendees.GetAllByEventId;
+using PassIn.Application.UseCases.Events.RegisterAttendee;
+using PassIn.Communication.Requests;
+using PassIn.Communication.Responses;
+
+namespace PassIn.Api.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AttendeesController : ControllerBase
+    {
+
+        [HttpPost]
+        [Route("{eventId}/register")]
+        [ProducesResponseType(typeof(ResponseRegisteredJson),StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(ResponseErrorJson),StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(ResponseErrorJson),StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ResponseErrorJson),StatusCodes.Status409Conflict)]
+        public IActionResult Register([FromBody] RequestRegisterEventJson request, [FromRoute] Guid eventId)
+        {
+            var useCase = new RegisterAttendeeOnEventUseCase();
+            var response = useCase.Execute(request, eventId);
+            return Created(string.Empty, response);
+        }
+
+        [HttpGet]
+        [Route("{eventId}")]
+        [ProducesResponseType(typeof(ResponseAllAttendeesJson),StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseErrorJson),StatusCodes.Status404NotFound)]
+        public IActionResult GetAll([FromRoute] Guid eventId, [FromQuery] int pageNumber = 1, [FromQuery] int pageSize
+                = 10, [FromQuery] string query = "")
+        {
+            var useCase = new GetAllAttendeesByEventIdUseCase();
+            var response = useCase.Execute(eventId, pageNumber, pageSize, query);
+            return Ok(response);
+        }
+    }
+}
