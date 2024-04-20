@@ -1,6 +1,9 @@
 ﻿networks:
   passinapp:
 
+volumes:
+  db:
+
 services:
   passin.db:
     container_name: pass-in-db
@@ -12,6 +15,8 @@ services:
       - SA_PASSWORD=reallyStrongPwd123
     networks:
       - passinapp
+    volumes:
+      - 'db:/var/opt/mssql'
   passin.api:
     container_name: pass-in-app
     image: passin:v1
