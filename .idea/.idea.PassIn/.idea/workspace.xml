@@ -9,8 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/preparativo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/preparativo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/PassInDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/PassInDbContext.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +176,9 @@
       <workItem from="1713346784152" duration="12747000" />
       <workItem from="1713440262348" duration="14566000" />
       <workItem from="1713488681414" duration="5343000" />
-      <workItem from="1713495888463" duration="975000" />
+      <workItem from="1713495888463" duration="1044000" />
+      <workItem from="1713530025088" duration="9112000" />
+      <workItem from="1713616544393" duration="3881000" />
     </task>
     <task id="LOCAL-00001" summary="Passin backend project">
       <option name="closed" value="true" />
@@ -185,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713495557579</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add readme">
+      <option name="closed" value="true" />
+      <created>1713496882994</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713496882994</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +215,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Passin backend project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Passin backend project" />
+    <MESSAGE value="add readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="add readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -273,19 +285,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PassIn.Infrastructure/PassInDbContext.cs</url>
-          <line>73</line>
-          <properties documentPath="$PROJECT_DIR$/PassIn.Infrastructure/PassInDbContext.cs" containingFunctionPresentation="Method 'SeedDatabase'">
-            <startOffsets>
-              <option value="2951" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2991" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

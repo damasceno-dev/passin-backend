@@ -37,43 +37,55 @@ public class PassInDbContext : DbContext
     public static void SeedDatabase()
     {
         var dbContext = new PassInDbContext();
-        dbContext.Database.EnsureDeleted();
-        dbContext.Database.EnsureCreated();
+        // dbContext.Database.EnsureDeleted();
+        // dbContext.Database.EnsureCreated();
+        dbContext.Database.Migrate();
         
         Guid eventId = new Guid("9e9bd979-9d10-4915-b339-3786b1634f33");
-        var eventEntity = new Event
+        var existingSeedingEvent = dbContext.Events.FirstOrDefault(e => e.Id == eventId);
+
+        //only seeds if the seeding event does not exists
+        if (existingSeedingEvent == null)
         {
-            Id = eventId,
-            Title = "Unite Summit",
-            Details = "Um evento para devs apaixonados por código!",
-            MaximumAttendees = 120,
-            Slug = "Unite Summit".ToLower().Replace(" ", "-")
-        };
-        dbContext.Events.Add(eventEntity);
-        dbContext.SaveChanges();
-        
-        List<Attendee> attendees = new List<Attendee>();
-        for (int i = 1; i <= 120; i++)
-        {
-            var faker = new Faker("pt_BR");
-            var attendee = new Attendee
+            var eventEntity = new Event
             {
-                Name = faker.Name.FullName(), 
-                Email = faker.Internet.Email().ToLower(), 
-                EventId = new Guid(eventId.ToString()),
-                CreatedAt = faker.Date.Recent(30),
-                //65% chance of the attendee has made check-in
-                CheckIn = faker.Random.Bool(0.65f) ? new CheckIn
-                {
-                    CreatedAt = faker.Date.Recent(5)
-                } : null,
+                Id = eventId,
+                Title = "Unite Summit",
+                Details = "Um evento para devs apaixonados por código!",
+                MaximumAttendees = 120,
+                Slug = "Unite Summit".ToLower().Replace(" ", "-")
             };
-            attendees.Add(attendee);
+            dbContext.Events.Add(eventEntity);
+            dbContext.SaveChanges();
+        
+            List<Attendee> attendees = new List<Attendee>();
+            for (int i = 1; i <= 120; i++)
+            {
+                var faker = new Faker("pt_BR");
+                var attendee = new Attendee
+                {
+                    Name = faker.Name.FullName(), 
+                    Email = faker.Internet.Email().ToLower(), 
+                    EventId = new Guid(eventId.ToString()),
+                    CreatedAt = faker.Date.Recent(30),
+                    //65% chance of the attendee has made check-in
+                    CheckIn = faker.Random.Bool(0.65f) ? new CheckIn
+                    {
+                        CreatedAt = faker.Date.Recent(5)
+                    } : null,
+                };
+                attendees.Add(attendee);
+            }
+        
+            dbContext.Attendees.AddRange(attendees);
+            dbContext.SaveChanges();
+        
+            Console.WriteLine("Database seeded!");
+        }
+        else
+        {
+            Console.WriteLine("Seeding Event already exists in the database. Seed was not applied.");
         }
         
-        dbContext.Attendees.AddRange(attendees);
-        dbContext.SaveChanges();
-        
-        Console.WriteLine("Database seeded!");
     }
 }

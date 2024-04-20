@@ -79,3 +79,17 @@ que a imagem do rider é diferente da do docker-compose up, e por que a app de d
  efbundle faz isso automático)
  - no servidor, na pasta /app, rodar ./efbundle para rodar as migrations
  - no servidor, na pasta /app, rodar "dotnet PassIn.Api.dll seed" para rodar o seed da base de dados 
+ 
+ obs: a estratégia de colocar as migrations para rodar toda vez que o docker-compose subir (colocando no program.cs ou 
+ um comando no docker-compose - exemplo abaixo), pode ser boa caso ele verifique se as migrations precisam ser aplicadas
+  ou não. Até porque, isso foi o que foi feito no nlw unite devops
+  Exemplo:
+ FROM base AS final
+ WORKDIR /app
+ COPY --from=publish /app/publish .
+ COPY --from=build /src/efbundle .
+ 
+ # Run EF migrations
+ RUN ./efbundle
+ 
+ ENTRYPOINT ["dotnet", "PassIn.Api.dll"] 
