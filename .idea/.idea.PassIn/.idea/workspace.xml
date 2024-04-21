@@ -8,8 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/ci.yml" afterDir="false" />
+    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="fix: workflow file">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +177,7 @@
       <workItem from="1713530025088" duration="9112000" />
       <workItem from="1713616544393" duration="5097000" />
       <workItem from="1713646699957" duration="4200000" />
-      <workItem from="1713700959827" duration="1985000" />
+      <workItem from="1713700959827" duration="2846000" />
     </task>
     <task id="LOCAL-00001" summary="Passin backend project">
       <option name="closed" value="true" />
@@ -211,7 +211,31 @@
       <option name="project" value="LOCAL" />
       <updated>1713650002895</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: configuring pipe">
+      <option name="closed" value="true" />
+      <created>1713719857388</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713719857388</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: workflows directory">
+      <option name="closed" value="true" />
+      <created>1713719933886</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713719933886</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: workflow file">
+      <option name="closed" value="true" />
+      <created>1713720129186</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713720129186</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +257,10 @@
     <MESSAGE value="add readme" />
     <MESSAGE value="fix: consider migrations before seeding the database" />
     <MESSAGE value="add volumes to docker-compose.yml for data persistence" />
-    <option name="LAST_COMMIT_MESSAGE" value="add volumes to docker-compose.yml for data persistence" />
+    <MESSAGE value="feat: configuring pipe" />
+    <MESSAGE value="fix: workflows directory" />
+    <MESSAGE value="fix: workflow file" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: workflow file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
