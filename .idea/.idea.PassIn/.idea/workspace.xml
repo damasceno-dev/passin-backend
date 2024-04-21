@@ -9,8 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +176,8 @@
       <workItem from="1713495888463" duration="1044000" />
       <workItem from="1713530025088" duration="9112000" />
       <workItem from="1713616544393" duration="5097000" />
-      <workItem from="1713646699957" duration="2948000" />
+      <workItem from="1713646699957" duration="4200000" />
+      <workItem from="1713700959827" duration="1985000" />
     </task>
     <task id="LOCAL-00001" summary="Passin backend project">
       <option name="closed" value="true" />
@@ -202,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713621595970</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add volumes to docker-compose.yml for data persistence">
+      <option name="closed" value="true" />
+      <created>1713650002895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713650002895</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +232,8 @@
     <MESSAGE value="Passin backend project" />
     <MESSAGE value="add readme" />
     <MESSAGE value="fix: consider migrations before seeding the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: consider migrations before seeding the database" />
+    <MESSAGE value="add volumes to docker-compose.yml for data persistence" />
+    <option name="LAST_COMMIT_MESSAGE" value="add volumes to docker-compose.yml for data persistence" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
