@@ -12,7 +12,7 @@ jobs:
     
     steps:
     - name: Checkout
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
     
     - name: Generate sha
       id: generate_sha
@@ -21,4 +21,4 @@ jobs:
         echo "sha=$SHA" >> $GITHUB_OUTPUT
         
     - name: Build docker image
-    - run: docker build -t damasc84/passin-backend:${{ steps.generate_sha.outputs.sha }} -f PassIn.Api/Dockerfile
+      run: docker build -t damasc84/passin-backend:${{ steps.generate_sha.outputs.sha }} -f PassIn.Api/Dockerfile
