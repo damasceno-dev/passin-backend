@@ -8,10 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="fix: workflow docker build command">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="feat: add dockerhub credentials" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,7 +174,7 @@
       <workItem from="1713530025088" duration="9112000" />
       <workItem from="1713616544393" duration="5097000" />
       <workItem from="1713646699957" duration="4200000" />
-      <workItem from="1713700959827" duration="8180000" />
+      <workItem from="1713700959827" duration="8494000" />
     </task>
     <task id="LOCAL-00001" summary="Passin backend project">
       <option name="closed" value="true" />
@@ -251,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713720676587</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: add dockerhub credentials">
+      <option name="closed" value="true" />
+      <created>1713790840346</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713790840346</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +283,8 @@
     <MESSAGE value="fix: workflow file" />
     <MESSAGE value="fix: workflow" />
     <MESSAGE value="fix: workflow docker build command" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: workflow docker build command" />
+    <MESSAGE value="feat: add dockerhub credentials" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add dockerhub credentials" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
