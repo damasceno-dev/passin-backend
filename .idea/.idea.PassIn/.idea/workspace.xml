@@ -8,7 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="fix: workflow file">
+    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="fix: workflow docker build command">
       <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -177,7 +177,7 @@
       <workItem from="1713530025088" duration="9112000" />
       <workItem from="1713616544393" duration="5097000" />
       <workItem from="1713646699957" duration="4200000" />
-      <workItem from="1713700959827" duration="2846000" />
+      <workItem from="1713700959827" duration="8180000" />
     </task>
     <task id="LOCAL-00001" summary="Passin backend project">
       <option name="closed" value="true" />
@@ -235,7 +235,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713720129186</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix: workflow">
+      <option name="closed" value="true" />
+      <created>1713720557823</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713720557823</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: workflow docker build command">
+      <option name="closed" value="true" />
+      <created>1713720676587</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713720676587</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +276,9 @@
     <MESSAGE value="feat: configuring pipe" />
     <MESSAGE value="fix: workflows directory" />
     <MESSAGE value="fix: workflow file" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: workflow file" />
+    <MESSAGE value="fix: workflow" />
+    <MESSAGE value="fix: workflow docker build command" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: workflow docker build command" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
