@@ -1,0 +1,21 @@
+﻿networks:
+  passinapp:
+    
+services:
+  passin.api:
+    container_name: pass-in-app
+    image: passin:v1
+    build:
+      context: .
+      dockerfile: ./PassIn.Api/Dockerfile      
+      args:
+        - BUILD_TAG=passin:v1
+    ports: 
+      - 8080:8080
+      - 8443:8443
+    environment:
+      - DB_HOST=${DB_HOST_AWS}
+      - DB_NAME=${DB_NAME}
+      - DB_SA_PASSWORD=${DB_SA_PASSWORD}
+    networks:
+      - passinapp

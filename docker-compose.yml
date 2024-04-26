@@ -1,4 +1,4 @@
-﻿networks:
+networks:
   passinapp:
 
 volumes:
@@ -22,17 +22,17 @@ services:
     image: passin:v1
     build:
       context: .
-      dockerfile: ./PassIn.Api/Dockerfile      
+      dockerfile: ./PassIn.Api/Dockerfile
       args:
         - BUILD_TAG=passin:v1
-    ports: 
+    ports:
       - 8080:8080
       - 8443:8443
     depends_on:
       - passin.db
     environment:
-      - DB_HOST=passin.db
-      - DB_NAME=PassInDb
-      - DB_SA_PASSWORD=reallyStrongPwd123
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - DB_SA_PASSWORD=${DB_SA_PASSWORD}
     networks:
       - passinapp
