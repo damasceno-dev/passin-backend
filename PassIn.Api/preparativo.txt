@@ -93,3 +93,26 @@ que a imagem do rider é diferente da do docker-compose up, e por que a app de d
  RUN ./efbundle
  
  ENTRYPOINT ["dotnet", "PassIn.Api.dll"] 
+ 
+ 
+ => puxando a última imagem do docker e rodando com as variáveis de ambiente da aws está funcionando. Ainda não consegui
+  
+ fazer funcionar por dentro do kubernets...
+ 
+ docker pull damasc84/passin-backend:4f73b7c
+ 
+ docker run -d \
+   --platform linux/amd64 \
+   -e DB_HOST="terraform-202404261527164562000000..." \
+   -e DB_NAME="passin" \
+   -e DB_SA_PASSWORD="" \
+   -p 8080:8080 \
+   -p 8443:8443 \
+   damasc84/passin-backend:4f73b7c
+   
+steps to reproduce:
+kubectl apply -f k8s -n passin
+kubectl get pods -n passin
+kubectl port-forward svc/passin-service -n passin 8080:80
+kubectl logs passin-deployment-65bdfc6974-66zjj -n passin -f
+terminate called after throwing an instance of 'PAL_SEHException'
