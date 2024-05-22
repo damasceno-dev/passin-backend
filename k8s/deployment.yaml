@@ -21,11 +21,17 @@ spec:
           image: damasc84/passin-backend:2069417
           env:
             - name: DB_HOST
-              value: "terraform-20240426152716456200000001.cnmgy8a06r5x.us-east-1.rds.amazonaws.com"
+              valueFrom:
+                secretKeyRef:
+                  name: db-connection
+                  key: url
             - name: DB_NAME
               value: "passin"
             - name: DB_SA_PASSWORD
-              value: "reallyStrongPwd123"
+              valueFrom:
+                configMapKeyRef:
+                  name: passin-env
+                  key: sa_password
           ports:
             - containerPort: 8080
           resources:

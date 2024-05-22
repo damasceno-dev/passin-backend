@@ -8,7 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="fix: removed preparativo.txt" />
+    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="update workspace.xml without preparativo.txt">
+      <change afterPath="$PROJECT_DIR$/k8s/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/secret.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/deployment.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,7 +201,7 @@
       <workItem from="1714399095342" duration="5951000" />
       <workItem from="1714477068522" duration="14836000" />
       <workItem from="1716205705481" duration="26626000" />
-      <workItem from="1716377255087" duration="3295000" />
+      <workItem from="1716377255087" duration="11101000" />
     </task>
     <task id="LOCAL-00001" summary="Passin backend project">
       <option name="closed" value="true" />
@@ -374,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716381480282</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update workspace.xml without preparativo.txt">
+      <option name="closed" value="true" />
+      <created>1716381523556</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716381523556</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +428,8 @@
     <MESSAGE value="fix: now kubernets + aws is working" />
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="fix: removed preparativo.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: removed preparativo.txt" />
+    <MESSAGE value="update workspace.xml without preparativo.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="update workspace.xml without preparativo.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
