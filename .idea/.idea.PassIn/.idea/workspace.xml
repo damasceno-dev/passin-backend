@@ -8,8 +8,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="correct the dockerfile to build and push at the same step">
+    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/preparativo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/preparativo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-aws.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-aws.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/service.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +86,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose-aws.yml: Compose Deployment">
     <configuration name="PassIn.Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/PassIn.Api/PassIn.Api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -196,7 +201,9 @@
       <workItem from="1713971265799" duration="4087000" />
       <workItem from="1714150264685" duration="3316000" />
       <workItem from="1714399095342" duration="5951000" />
-      <workItem from="1714477068522" duration="7132000" />
+      <workItem from="1714477068522" duration="14836000" />
+      <workItem from="1716205705481" duration="26626000" />
+      <workItem from="1716377255087" duration="2959000" />
     </task>
     <task id="LOCAL-00001" summary="Passin backend project">
       <option name="closed" value="true" />
@@ -334,7 +341,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714483338613</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="back to single platform for dockerimage push.">
+      <option name="closed" value="true" />
+      <created>1714485700561</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1714485700561</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update next try on preparativo.txt">
+      <option name="closed" value="true" />
+      <created>1714492544060</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714492544060</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +369,7 @@
     <option featureType="dependencySupport" implementationName="executable:docker" />
     <option featureType="dependencySupport" implementationName="dotnet:Microsoft.Identity.Client" />
     <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
     <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Abstractions" />
     <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore.Relational" />
     <option featureType="dependencySupport" implementationName="dotnet:Microsoft.EntityFrameworkCore" />
@@ -369,7 +393,9 @@
     <MESSAGE value="Stop tracking .env file" />
     <MESSAGE value="add kubernetes files. change ci/cd to consider platforms amd64 and arm64" />
     <MESSAGE value="correct the dockerfile to build and push at the same step" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct the dockerfile to build and push at the same step" />
+    <MESSAGE value="back to single platform for dockerimage push." />
+    <MESSAGE value="update next try on preparativo.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="update next try on preparativo.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

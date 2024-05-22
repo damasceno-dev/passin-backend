@@ -18,9 +18,16 @@ spec:
     spec:
       containers: 
         - name: passin
-          image: damasc84/passin-backend:8e49542
+          image: damasc84/passin-backend:2069417
+          env:
+            - name: DB_HOST
+              value: "terraform-20240426152716456200000001.cnmgy8a06r5x.us-east-1.rds.amazonaws.com"
+            - name: DB_NAME
+              value: "passin"
+            - name: DB_SA_PASSWORD
+              value: "reallyStrongPwd123"
           ports:
-            - containerPort: 3333
+            - containerPort: 8080
           resources:
             requests:
               cpu: 200m
@@ -28,4 +35,3 @@ spec:
             limits:
               cpu: 400m
               memory: 512Mi
-            

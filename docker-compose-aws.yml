@@ -3,7 +3,7 @@
     
 services:
   passin.api:
-    container_name: pass-in-app
+    container_name: pass-in-app-aws
     image: passin:v1
     build:
       context: .

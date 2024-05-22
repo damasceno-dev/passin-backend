@@ -39,14 +39,14 @@ What happens to other stages?
 Dmitry Matveev
 8/28/2023 at 10:02 AM
 Hello,
-Other stages are not executed in fast mode. You can find a more detailed description in this article:
+Other stages aren't executed in fast mode. You can find a more detailed description in this article:
 https://blog.jetbrains.com/dotnet/2023/06/07/...
 
 
 => efbundle não está achando a base de dados.
 -> vi que é a aplicação toda que não acha, não consigo inserir um evento
-R: funcionou depois que eu comentei as seguintes linhas. Acho que porque eu estava setando DB_host como localhost no 
-hardcode, e o docker precisa que db_host seja passin.db. Mas pra acessar da minha máquina, é com locahost mesmo.
+R: funcionou depois que comentei as seguintes linhas. Acho que porque eu estava setando DB_host como localhost no 
+hardcode, e o docker precisa que db_host seja passin.db. Mas pra acessar da minha máquina, é com localhost mesmo.
 
 You can use either localhost or passin.db as the host address to connect to the database running in your Docker container, depending on how your Docker setup resolves container names.
 In Docker Compose, services are given a DNS name that corresponds to their service name. So, when you specify DB_HOST=passin.db in your Docker Compose configuration, it should resolve to the IP address of the passin.db container within the Docker network. This allows containers within the same network to communicate with each other using their service names.
@@ -62,8 +62,7 @@ Para rodar a aplicação no container, tive que aprender docker-compose, para ro
 network. Aprendi a setar as variáveis de ambiente, e como se conectar no servidor sql rodando dentro de um docker 
 compose.
 
-Para rodar as migrations do lado do servidor, tive que aprender sobre o efbundle, como gerá-lo do lado do servidor, por 
-que a imagem do rider é diferente da do docker-compose up, e por que a app de dentro do docker não estava reconhecendo o
+Para rodar as migrations do lado do servidor, tive que aprender sobre o efbundle, como gerá-lo do lado do servidor, porque a imagem do rider é diferente da do docker-compose up, e porque a app de dentro do docker não estava reconhecendo o
  sqlserver (pois eu estava setando hardcoded a variável de ambiente db_host para localhost. só que o servidor é 
  localhost pra mim, para o app de dentro do docker é passin.db), então eu tive que tirar as variáveis de ambiente do 
  hardcoded no código, pra deixar o sistema se virar pra saber quando é localhost e quando é passin.db.
@@ -95,9 +94,20 @@ que a imagem do rider é diferente da do docker-compose up, e por que a app de d
  ENTRYPOINT ["dotnet", "PassIn.Api.dll"] 
  
  
- => puxando a última imagem do docker e rodando com as variáveis de ambiente da aws está funcionando. Ainda não consegui
-  
- fazer funcionar por dentro do kubernets...
+ => conectando na rds aws a partir do DataGrip:
+    - na tela principal da base, no console, em Connectivity & security, clique no link embaixo de VPC security groups 
+    (default (sg-0d7eefab879c2a856)).
+    - Selecione o grupo, e, na aba Inbound rules, clique em "Edit inbound rules"
+    - adicione uma regra do tipo MSSQL, source My IP.
+    Pronto!
+    vídeo: https://www.youtube.com/watch?v=vp_uulb5phM
+    No datagrip, a conexão é:
+    Host: terraform-20240426152716456200000001.cnmgy8a06r5x.us-east-1.rds.amazonaws.com
+    Port: 1433
+    Authentication: User & Password
+    User: sa
+ 
+ => puxando a última imagem do docker e rodando com as variáveis de ambiente da aws está funcionando. Ainda não consegui fazer funcionar por dentro do kubernets...
  
  docker pull damasc84/passin-backend:4f73b7c
  
@@ -116,3 +126,7 @@ kubectl get pods -n passin
 kubectl port-forward svc/passin-service -n passin 8080:80
 kubectl logs passin-deployment-65bdfc6974-66zjj -n passin -f
 terminate called after throwing an instance of 'PAL_SEHException'
+
+R: funcionou do nada!!! Única coisa que fiz de diferente dessa vez foi instalar o watch (brew install watch), pra poder 
+usar o comando "watch kubectl get pods -n passin", e atualizei o deployment.yaml para buscar a última versão que estava 
+no dockerhub. Vou observar para ver se ele ocntinua funcionando
