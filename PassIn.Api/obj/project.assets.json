@@ -59,6 +59,15 @@
           }
         }
       },
+      "dotenv.net/3.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        }
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -2922,6 +2931,21 @@
         "lib/netstandard1.3/Bogus.xml",
         "lib/netstandard2.0/Bogus.dll",
         "lib/netstandard2.0/Bogus.xml"
+      ]
+    },
+    "dotenv.net/3.1.3": {
+      "sha512": "gzksGrozUM/6OzBL2M99EINDLB5vhZScnRw5/oYaKx0O4PWusCBzzq9JCofhP8nL3uoli6V7SLmrwpF/PTj8XQ==",
+      "type": "package",
+      "path": "dotenv.net/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dotenv.net.3.1.3.nupkg.sha512",
+        "dotenv.net.nuspec",
+        "lib/netstandard1.6/dotenv.net.dll",
+        "lib/netstandard2.0/dotenv.net.dll",
+        "lib/netstandard2.1/dotenv.net.dll"
       ]
     },
     "Humanizer/2.14.1": {
@@ -8277,7 +8301,8 @@
       "PassIn.Application >= 1.0.0",
       "PassIn.Communication >= 1.0.0",
       "PassIn.Exceptions >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 6.4.0"
+      "Swashbuckle.AspNetCore >= 6.4.0",
+      "dotenv.net >= 3.1.3"
     ]
   },
   "packageFolders": {
@@ -8334,6 +8359,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.4.0, )"
+          },
+          "dotenv.net": {
+            "target": "Package",
+            "version": "[3.1.3, )"
           }
         },
         "imports": [

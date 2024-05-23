@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NlciAO8I9Bj/z+45W+jk+QerpD+Nrzp9ph4pGYW7SP6+FXg9hQWIEnJCqBcgHNvqbrujL2pQEy7qo/00TZgwaQ==",
+  "dgSpecHash": "nmtDmfKwVxgYvhPhucrVN/qGmwK8KsZKg/12s8tO5wjj/ymkeGziCMYmju72KRnPN+FR7Z3cB1R24hysr67J/A==",
   "success": true,
   "projectFilePath": "/Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Api/PassIn.Api.csproj",
   "expectedPackageFiles": [
     "/Users/fernandodamasceno/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/fernandodamasceno/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/fernandodamasceno/.nuget/packages/bogus/35.5.0/bogus.35.5.0.nupkg.sha512",
+    "/Users/fernandodamasceno/.nuget/packages/dotenv.net/3.1.3/dotenv.net.3.1.3.nupkg.sha512",
     "/Users/fernandodamasceno/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/fernandodamasceno/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/fernandodamasceno/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",

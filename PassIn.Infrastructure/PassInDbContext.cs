@@ -26,9 +26,10 @@ public class PassInDbContext : DbContext
         // Environment.SetEnvironmentVariable("DB_HOST", "localhost");
         // Environment.SetEnvironmentVariable("DB_NAME", "PassInDb");
         // Environment.SetEnvironmentVariable("DB_SA_PASSWORD", "reallyStrongPwd123");
-        
-        var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
-        var dbName = Environment.GetEnvironmentVariable("DB_NAME");
+        var isDocker = File.Exists("/.dockerenv");
+        var dbHost = isDocker ? Environment.GetEnvironmentVariable("DB_HOST") : "localhost";
+        // var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
+        var dbName = isDocker ? Environment.GetEnvironmentVariable("DB_NAME") : "PassInDb";
         var dbSaPassword = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
         optionsBuilder.UseSqlServer(@$"Data Source={dbHost},1433;Initial Catalog={dbName};User Id=sa; Password={dbSaPassword};TrustServerCertificate=True;");
         //"Data Source=localhost,1433;Initial Catalog=PassInDb;User Id=sa; Password=reallyStrongPwd123;TrustServerCertificate=True;"

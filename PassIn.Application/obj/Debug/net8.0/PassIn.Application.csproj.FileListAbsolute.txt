@@ -17,3 +17,4 @@
 /Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Application/obj/Debug/net8.0/refint/PassIn.Application.dll
 /Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Application/obj/Debug/net8.0/PassIn.Application.pdb
 /Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Application/obj/Debug/net8.0/ref/PassIn.Application.dll
+/Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Application/obj/Debug/net8.0/PassIn.Application.sourcelink.json

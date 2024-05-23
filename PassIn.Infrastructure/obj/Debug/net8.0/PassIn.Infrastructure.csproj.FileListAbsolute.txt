@@ -12,3 +12,4 @@
 /Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.runtimeconfig.json
 /Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.csproj.AssemblyReference.cache
 /Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.genruntimeconfig.cache
+/Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.sourcelink.json
