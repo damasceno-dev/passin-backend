@@ -9,3 +9,4 @@
 /Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Exceptions/obj/Debug/net8.0/refint/PassIn.Exceptions.dll
 /Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Exceptions/obj/Debug/net8.0/PassIn.Exceptions.pdb
 /Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Exceptions/obj/Debug/net8.0/ref/PassIn.Exceptions.dll
+/Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Exceptions/obj/Debug/net8.0/PassIn.Exceptions.sourcelink.json

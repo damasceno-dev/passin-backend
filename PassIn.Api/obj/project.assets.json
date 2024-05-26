@@ -2823,6 +2823,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "PassIn.Communication": "1.0.0",
           "PassIn.Exceptions": "1.0.0",
           "PassIn.Infrastructure": "1.0.0"

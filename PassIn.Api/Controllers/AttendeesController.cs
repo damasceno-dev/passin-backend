@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PassIn.Application.UseCases.Attendees.GetAllByEventId;
 using PassIn.Application.UseCases.Events.RegisterAttendee;

@@ -1,6 +1,8 @@
 using dotenv.net;
 using dotenv.net.Utilities;
 using PassIn.Api.Filters;
+using PassIn.Application.UseCases.Events.GetById;
+using PassIn.Application.UseCases.Events.Register;
 using PassIn.Infrastructure;
 using static System.IO.Path;
 
@@ -33,6 +35,11 @@ builder.Services.AddCors(options =>
                 .AllowAnyHeader();
         });
 });
+
+// Register application use cases and logging services
+builder.Services.AddLogging();
+builder.Services.AddScoped<RegisterEventUseCase>();
+builder.Services.AddScoped<GetEventByIdUseCase>();
 
 if (Array.Exists(args, arg => arg.Equals("seed", StringComparison.CurrentCultureIgnoreCase)))
 {
