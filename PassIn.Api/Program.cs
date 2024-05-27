@@ -11,22 +11,6 @@ DotEnv.Load(new DotEnvOptions(envFilePaths: new[] { envPath }));
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Read environment variables
-var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
-var dbName = Environment.GetEnvironmentVariable("DB_NAME");
-var dbSaPassword = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
-
-// Build the connection string
-var connectionString = $"Server={dbHost};Database={dbName};User Id=sa;Password={dbSaPassword};";
-
-// Log the connection string
-var logger = LoggerFactory.Create(config =>
-{
-    config.AddConsole();
-}).CreateLogger("Program");
-logger.LogInformation("Connection String: {ConnectionString}", connectionString);
-
-
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();

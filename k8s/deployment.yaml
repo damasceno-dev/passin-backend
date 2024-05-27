@@ -18,7 +18,7 @@ spec:
     spec:
       containers: 
         - name: passin
-          image: damasc84/passin-backend:bbfd7ca
+          image: damasc84/passin-backend:d51c83d
           env:
             - name: DB_HOST
               valueFrom:
