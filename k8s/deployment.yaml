@@ -18,7 +18,7 @@ spec:
     spec:
       containers: 
         - name: passin
-          image: damasc84/passin-backend:d51c83d
+          image: damasc84/passin-backend:811862d
           env:
             - name: DB_HOST
               valueFrom:
@@ -32,6 +32,8 @@ spec:
                 configMapKeyRef:
                   name: passin-env
                   key: sa_password
+            - name: DOTNET_RUNNING_IN_CONTAINER
+              value: "true"
           ports:
             - containerPort: 8080
           resources:

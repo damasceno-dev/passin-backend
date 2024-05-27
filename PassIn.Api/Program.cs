@@ -1,14 +1,8 @@
-using dotenv.net;
+
 using PassIn.Api.Filters;
 using PassIn.Application.UseCases.Events.GetById;
 using PassIn.Application.UseCases.Events.Register;
 using PassIn.Infrastructure;
-
-string root = Directory.GetParent(Directory.GetCurrentDirectory()).FullName;
-string envPath = Path.Combine(root, ".env");
-
-DotEnv.Load(new DotEnvOptions(envFilePaths: new[] { envPath }));
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();

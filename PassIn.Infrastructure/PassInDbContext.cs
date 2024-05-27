@@ -13,7 +13,7 @@ public class PassInDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        var isDocker = File.Exists("/.dockerenv");
+        var isDocker = Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") == "true";
         var dbHost = isDocker ? Environment.GetEnvironmentVariable("DB_HOST") : "localhost";
         var dbName = isDocker ? Environment.GetEnvironmentVariable("DB_NAME") : "PassInDb";
         var dbSaPassword = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");

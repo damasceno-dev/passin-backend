@@ -34,5 +34,6 @@ services:
       - DB_HOST=${DB_HOST}
       - DB_NAME=${DB_NAME}
       - DB_SA_PASSWORD=${DB_SA_PASSWORD}
+      - DOTNET_RUNNING_IN_CONTAINER=true
     networks:
       - passinapp
