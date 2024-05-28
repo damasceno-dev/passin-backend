@@ -3,77 +3,97 @@ using PassIn.Communication.Requests;
 using PassIn.Communication.Responses;
 using PassIn.Exceptions;
 using PassIn.Infrastructure;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
-namespace PassIn.Application.UseCases.Events.RegisterAttendee;
-
-public class RegisterAttendeeOnEventUseCase
+namespace PassIn.Application.UseCases.Events.RegisterAttendee
 {
-    private readonly PassInDbContext _dbContext;
-    public RegisterAttendeeOnEventUseCase()
+    public class RegisterAttendeeOnEventUseCase
     {
-        _dbContext = new PassInDbContext();
-    }
-    public ResponseRegisteredJson Execute(RequestRegisterEventJson request,  Guid eventId)
-    {
-        Validate(eventId, request);
-        var newAttendee = new Infrastructure.Entities.Attendee
-        {
-            Email = request.Email,
-            Name = request.Name,
-            EventId = eventId,
-            CreatedAt = DateTime.UtcNow
-        };
-        _dbContext.Attendees.Add(newAttendee);
-        _dbContext.SaveChanges();
+        private readonly PassInDbContext _dbContext;
+        private readonly ILogger<RegisterAttendeeOnEventUseCase> _logger;
 
-        return new ResponseRegisteredJson
+        public RegisterAttendeeOnEventUseCase(ILogger<RegisterAttendeeOnEventUseCase> logger)
         {
-            Id = newAttendee.Id
-        };
-    }
-
-    private void Validate(Guid eventId, RequestRegisterEventJson request)
-    {
-        var eventEntity = _dbContext.Events.Find(eventId);
-        if (eventEntity is null)
-        {
-            throw new NotFoundException("An event with this id does not exists.");
-        }
-        if (string.IsNullOrWhiteSpace(request.Name))
-        {
-            throw new ErrorOnValidationException("The name is invalid");
-        }
-        if (!EmailIsValid(request.Email))
-        {
-            throw new ErrorOnValidationException("The email is invalid");
+            _dbContext = new PassInDbContext();
+            _logger = logger;
         }
 
-        var attendeeAlreadyRegistered = _dbContext.Attendees.Any(a => a.Email.Equals(request.Email) && a.EventId == 
-            eventId);
-
-        if (attendeeAlreadyRegistered)
+        public ResponseRegisteredJson Execute(RequestRegisterEventJson request, Guid eventId)
         {
-            throw new ConflictException("You can't register twice on the same event.");
+            string requestJson = JsonConvert.SerializeObject(request);
+            _logger.LogInformation("Executing RegisterAttendeeOnEventUseCase for eventId: {eventId} with data: {requestJson}", eventId, requestJson);
+
+            Validate(eventId, request);
+
+            var newAttendee = new Infrastructure.Entities.Attendee
+            {
+                Email = request.Email,
+                Name = request.Name,
+                EventId = eventId,
+                CreatedAt = DateTime.UtcNow
+            };
+            _dbContext.Attendees.Add(newAttendee);
+            _dbContext.SaveChanges();
+
+            _logger.LogInformation("Attendee registered successfully with ID: {attendeeId}", newAttendee.Id);
+
+            return new ResponseRegisteredJson
+            {
+                Id = newAttendee.Id
+            };
         }
 
-        var attendeesNumberForEvent = _dbContext.Attendees.Count(a => a.EventId == eventId);
-        if (attendeesNumberForEvent == eventEntity.MaximumAttendees)
+        private void Validate(Guid eventId, RequestRegisterEventJson request)
         {
-            throw new ConflictException("There is no room for this event");
-        }
-    }
+            _logger.LogInformation("Validating request for eventId: {eventId} with data: {requestJson}", eventId, JsonConvert.SerializeObject(request));
 
-    private bool EmailIsValid(string email)
-    {
-        try
-        {
-            new MailAddress(email);
-            return true;
+            var eventEntity = _dbContext.Events.Find(eventId);
+            if (eventEntity is null)
+            {
+                _logger.LogWarning("Validation failed: Event with ID {eventId} does not exist", eventId);
+                throw new NotFoundException("An event with this id does not exist.");
+            }
+            if (string.IsNullOrWhiteSpace(request.Name))
+            {
+                _logger.LogWarning("Validation failed: Name is invalid for eventId: {eventId}", eventId);
+                throw new ErrorOnValidationException("The name is invalid");
+            }
+            if (!EmailIsValid(request.Email))
+            {
+                _logger.LogWarning("Validation failed: Email is invalid for eventId: {eventId}", eventId);
+                throw new ErrorOnValidationException("The email is invalid");
+            }
+
+            var attendeeAlreadyRegistered = _dbContext.Attendees.Any(a => a.Email.Equals(request.Email) && a.EventId == eventId);
+            if (attendeeAlreadyRegistered)
+            {
+                _logger.LogWarning("Validation failed: Attendee already registered for eventId: {eventId}", eventId);
+                throw new ConflictException("You can't register twice for the same event.");
+            }
+
+            var attendeesNumberForEvent = _dbContext.Attendees.Count(a => a.EventId == eventId);
+            if (attendeesNumberForEvent == eventEntity.MaximumAttendees)
+            {
+                _logger.LogWarning("Validation failed: No room for eventId: {eventId}", eventId);
+                throw new ConflictException("There is no room for this event");
+            }
+
+            _logger.LogInformation("Validation succeeded for eventId: {eventId}", eventId);
         }
-        catch (Exception e)
+
+        private bool EmailIsValid(string email)
         {
-            Console.WriteLine(e);
-            return false;
+            try
+            {
+                new MailAddress(email);
+                return true;
+            }
+            catch (Exception e)
+            {
+                _logger.LogWarning("Email validation failed: {email} is invalid", email);
+                return false;
+            }
         }
     }
 }

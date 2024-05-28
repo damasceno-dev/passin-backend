@@ -18,7 +18,7 @@ spec:
     spec:
       containers: 
         - name: passin
-          image: damasc84/passin-backend:811862d
+          image: damasc84/passin-backend:81caaa7
           env:
             - name: DB_HOST
               valueFrom:
@@ -38,8 +38,8 @@ spec:
             - containerPort: 8080
           resources:
             requests:
-              cpu: 200m
-              memory: 512Mi
+              memory: "1024Mi"
+              cpu: "600m"
             limits:
-              cpu: 400m
-              memory: 512Mi
+              memory: "2048Mi"
+              cpu: "2000m"
