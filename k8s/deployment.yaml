@@ -7,7 +7,7 @@ metadata:
     app: passin
 
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: passin
@@ -18,7 +18,7 @@ spec:
     spec:
       containers: 
         - name: passin
-          image: damasc84/passin-backend:81caaa7
+          image: damasc84/passin-backend:bff6d34
           env:
             - name: DB_HOST
               valueFrom:

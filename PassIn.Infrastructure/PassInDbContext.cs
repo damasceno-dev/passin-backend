@@ -18,7 +18,7 @@ public class PassInDbContext : DbContext
         var dbName = isDocker ? Environment.GetEnvironmentVariable("DB_NAME") : "PassInDb";
         var dbSaPassword = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
 
-        var connectionString = @$"Data Source={dbHost},1433;Initial Catalog={dbName};User Id=sa; Password={dbSaPassword};TrustServerCertificate=True;";
+        var connectionString = @$"Data Source={dbHost},1433;Initial Catalog={dbName};User Id=sa; Password=hidden;TrustServerCertificate=True;";
         Console.WriteLine($"Using Connection String: {connectionString}");
 
         optionsBuilder.UseSqlServer(connectionString);
