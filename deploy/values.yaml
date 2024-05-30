@@ -5,9 +5,9 @@
 replicaCount: 5
 
 image:
-  repository: 'damasc84/passin-backend'
-  pullPolicy: 'Always'
-  tag: 'bff6d34'
+  repository: damasc84/passin-backend
+  pullPolicy: Always
+  tag: "bff6d34"
   port: 8080
 
 imagePullSecrets: []
@@ -40,7 +40,7 @@ securityContext: {}
 # runAsUser: 1000
 
 service:
-  type: 'ClusterIP'
+  type: ClusterIP
   port: 80
 
 ingress:
