@@ -23,6 +23,8 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHealthChecks(); // Add health checks
+
 //redirects any exception from the project to the class ExceptionFilter
 builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilter)));
 // builder.Services.AddDbContext<PassInDbContext>(options =>
@@ -56,7 +58,6 @@ if (Array.Exists(args, arg => arg.Equals("seed", StringComparison.CurrentCulture
     return;
 }
 
-
 var app = builder.Build();
 
 // if (app.Environment.IsDevelopment())
@@ -72,6 +73,9 @@ app.UseSwaggerUI();
 app.UseCors("AllowAll");
 
 app.UseAuthorization();
+
+// Map health checks endpoint
+app.MapHealthChecks("/health");
 
 app.MapControllers();
 
