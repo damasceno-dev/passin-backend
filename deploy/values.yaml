@@ -2,7 +2,7 @@ replicaCount: 5
 image:
   repository: damasc84/passin-backend
   pullPolicy: Always
-  tag: b09e03b
+  tag: 631b92c
   port: 8080
 imagePullSecrets: []
 nameOverride: ''
