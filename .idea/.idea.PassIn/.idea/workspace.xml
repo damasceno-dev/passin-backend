@@ -10,17 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Communication/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Communication/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Exceptions/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Exceptions/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +248,7 @@
       <workItem from="1717349255351" duration="7409000" />
       <workItem from="1717414866675" duration="11283000" />
       <workItem from="1717502295845" duration="10532000" />
-      <workItem from="1717600441334" duration="8508000" />
+      <workItem from="1717600441334" duration="9172000" />
     </task>
     <task id="LOCAL-00001" summary="Passin backend project">
       <option name="closed" value="true" />
