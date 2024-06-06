@@ -2,7 +2,7 @@ replicaCount: 5
 image:
   repository: damasc84/passin-backend
   pullPolicy: Always
-  tag: 79c3493
+  tag: 63f80fc
   port: 8080
 imagePullSecrets: []
 nameOverride: ''
@@ -17,7 +17,7 @@ podLabels: {}
 podSecurityContext: {}
 securityContext: {}
 service:
-  type: LoadBalancer 
+  type: LoadBalancer
   port: 80
   startupProbe:
     httpGet:
