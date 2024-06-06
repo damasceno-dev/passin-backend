@@ -8,60 +8,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="fix: values.yaml">
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/PassIn.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/PassIn.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Api.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Api.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Infrastructure.pdb" afterDir="false" />
+    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/ref/PassIn.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/ref/PassIn.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/refint/PassIn.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/refint/PassIn.Api.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/PassIn.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/PassIn.Api.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/PassIn.Api.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/PassIn.Api.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/ref/PassIn.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/ref/PassIn.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/refint/PassIn.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/refint/PassIn.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Communication/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Communication/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Exceptions/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Exceptions/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Communication/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Communication/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Exceptions/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Exceptions/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/ref/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/ref/PassIn.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/refint/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/refint/PassIn.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +51,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PassIn.Exceptions/ResponseErrorJson.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Infrastructure/PassInDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/108d6a99788f4ec6b97608290b569ad53400/8e/cf5c6389/DotEnv.cs" root0="SKIP_HIGHLIGHTING" />
@@ -118,39 +78,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.PassIn.Api: http.executor": "Run",
-    ".NET Launch Settings Profile.PassIn.Api: https.executor": "Run",
-    ".NET Launch Settings Profile.Passin.Api seed.executor": "Debug",
-    ".NET Project.Seed.executor": "Run",
-    "Docker.aws-docker-compose.executor": "Run",
-    "Docker.docker-compose-aws.yml: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.executor": "Run",
-    "Docker.docker-compose.yml.passin.api: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.passin.db: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "XThreadsFramesViewSplitterKey": "0.30677292",
-    "git-widget-placeholder": "Merging main",
-    "last_opened_file_path": "/Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.PassIn.Api: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.PassIn.Api: https.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Passin.Api seed.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Seed.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.aws-docker-compose.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose-aws.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.passin.api: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.passin.db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.30677292&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/fernandodamasceno/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
-      "/Users/fernandodamasceno/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
-      "/Users/fernandodamasceno/Library/Application Support/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/fernandodamasceno/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/fernandodamasceno/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/fernandodamasceno/Library/Application Support/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.PassIn.Api: http">
     <configuration name="Seed" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Api.dll" />
@@ -294,7 +254,12 @@
       <workItem from="1716896992276" duration="12196000" />
       <workItem from="1716967093312" duration="11099000" />
       <workItem from="1716996570100" duration="4000" />
-      <workItem from="1716996597930" duration="19730000" />
+      <workItem from="1716996597930" duration="22061000" />
+      <workItem from="1717157327622" duration="5912000" />
+      <workItem from="1717349255351" duration="7409000" />
+      <workItem from="1717414866675" duration="11283000" />
+      <workItem from="1717502295845" duration="10532000" />
+      <workItem from="1717600441334" duration="8508000" />
     </task>
     <task id="LOCAL-00001" summary="Passin backend project">
       <option name="closed" value="true" />
@@ -584,7 +549,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717072649563</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="feat: add health check">
+      <option name="closed" value="true" />
+      <created>1717095349033</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1717095349033</updated>
+    </task>
+    <task id="LOCAL-00038" summary="feat: add probes">
+      <option name="closed" value="true" />
+      <created>1717096819550</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1717096819550</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,8 +595,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix: docker push command" />
-    <MESSAGE value="feat: latest tag" />
     <MESSAGE value="add docker-compose for aws setup and test rds database" />
     <MESSAGE value="Stop tracking .env file" />
     <MESSAGE value="add kubernetes files. change ci/cd to consider platforms amd64 and arm64" />
@@ -639,7 +618,9 @@
     <MESSAGE value="fix: add deploy forlder" />
     <MESSAGE value="fix: double quotes on sha_output" />
     <MESSAGE value="fix: values.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: values.yaml" />
+    <MESSAGE value="feat: add health check" />
+    <MESSAGE value="feat: add probes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add probes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
