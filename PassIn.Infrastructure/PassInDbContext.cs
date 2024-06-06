@@ -20,7 +20,7 @@ public class PassInDbContext : DbContext
 
         var connectionString = @$"Data Source={dbHost},1433;Initial Catalog={dbName};User Id=sa; Password={dbSaPassword};
         TrustServerCertificate=True;";
-        Console.WriteLine($"Using Connection String: Data Source={dbHost},1433;Initial Catalog={dbName};User Id=sa; Password={dbSaPassword};TrustServerCertificate=True;");
+        Console.WriteLine($"Using Connection String: Data Source={dbHost},1433;Initial Catalog={dbName};User Id=sa; Password=hidden;TrustServerCertificate=True;");
 
         optionsBuilder.UseSqlServer(connectionString);
     }

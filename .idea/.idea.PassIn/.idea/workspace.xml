@@ -8,9 +8,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="">
+    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="fix: connection string">
+      <change afterPath="$PROJECT_DIR$/EKSAws/cluster-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EKSAws/steps.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/passin.deploy.cross-argo/passin-aws/argo.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/passin.deploy.cross-argo/passin-aws/repository.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/PassInDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/PassInDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +255,7 @@
       <workItem from="1717349255351" duration="7409000" />
       <workItem from="1717414866675" duration="11283000" />
       <workItem from="1717502295845" duration="10532000" />
-      <workItem from="1717600441334" duration="13994000" />
+      <workItem from="1717600441334" duration="18564000" />
     </task>
     <task id="LOCAL-00001" summary="Passin backend project">
       <option name="closed" value="true" />
@@ -555,7 +561,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717096819550</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="fix: connection string">
+      <option name="closed" value="true" />
+      <created>1717689026487</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1717689026487</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +599,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add docker-compose for aws setup and test rds database" />
     <MESSAGE value="Stop tracking .env file" />
     <MESSAGE value="add kubernetes files. change ci/cd to consider platforms amd64 and arm64" />
     <MESSAGE value="correct the dockerfile to build and push at the same step" />
@@ -610,7 +623,8 @@
     <MESSAGE value="fix: values.yaml" />
     <MESSAGE value="feat: add health check" />
     <MESSAGE value="feat: add probes" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add probes" />
+    <MESSAGE value="fix: connection string" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: connection string" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -636,7 +650,7 @@
               <option value="811" />
             </startOffsets>
             <endOffsets>
-              <option value="946" />
+              <option value="963" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="12" />

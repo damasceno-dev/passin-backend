@@ -1,6 +1,6 @@
 # dockerfile:
 right-click in passin.api and add it with Rider dockerfile template
-## changes:
+## changes to the default dockerfile that I've made:
 Add the tools to the PATH
 ENV PATH="${PATH}:/root/.dotnet/tools"
 
@@ -34,3 +34,51 @@ localhost is used for you to connect to the containerazed sqlserver
 
 # Seeding the database 
 seeding the database on the docker ui, exec tab, app folder, with the command: dotnet PassIn.Api.dll seed
+
+# Running on EKS aws with RDS aws
+1- Create RDS instance with this file:
+
+```
+terraform {
+    required_providers {
+        aws = {
+        source  = "hashicorp/aws"
+        version = "5.46.0"
+        }
+    }
+
+    provider "aws" {
+        profile = "default"
+        region  = "us-east-1"
+    }
+    
+    resource "aws_db_instance" "passin_db" {
+      allocated_storage   = 20
+      engine              = "sqlserver-ex"
+      engine_version      = "15.00.4355.3.v1"
+      instance_class      = "db.t3.micro"
+      username            = "sa"
+      password            = "reallyStrongPwd123"
+      license_model       = "license-included"
+      publicly_accessible = true
+      skip_final_snapshot = true
+      tags = {
+        Name = "passin"
+      }
+}
+```
+2- Create EKS Cluster and nodes with the file EKSAws/cluster-config.yaml following EKSAws/steps.txt
+
+obs: use the root user on aws cli (aws configure)
+
+3- After installing argo and helm, use the files passin.deploy.cross-argo/passin-aws to create the namespace and 
+configure the CD with argo:
+```
+aws eks --region (your-region) update-kubeconfig --name (aws-cluster-name)
+kubectl get pods -n kube-system => ver se o aws-node aparece
+
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://...argoPage..
+
+kubectl apply -n argocd -f apps/passin
+```

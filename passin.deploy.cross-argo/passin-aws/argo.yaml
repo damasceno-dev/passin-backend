@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: passin
+  namespace: argocd
+
+spec: 
+  project: default
+  source: 
+    repoURL: https://github.com/damasceno-dev/passin-backend
+    targetRevision: HEAD
+    path: deploy
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: passin-aws
+  syncPolicy:
+    automated:
+      prune: true

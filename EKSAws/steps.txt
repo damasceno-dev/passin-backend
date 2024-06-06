@@ -1,0 +1,15 @@
+Steps to Create the Cluster
+Save the Configuration: Save the YAML content in a file named cluster-config.yaml.
+
+Create the Cluster: Run the following command to create the cluster using eksctl:
+
+cd EKSAws
+eksctl create cluster -f cluster-config.yaml
+
+Update kubeconfig: Ensure your kubeconfig is updated to use the new cluster with the correct IAM role:
+
+aws eks update-kubeconfig --name passin-eks --region us-east-1
+
+Verify the Cluster: Verify that your cluster is up and running by listing the nodes:
+
+kubectl get nodes
