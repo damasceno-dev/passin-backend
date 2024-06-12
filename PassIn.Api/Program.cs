@@ -19,6 +19,13 @@ DotEnv.Load(new DotEnvOptions(envFilePaths: new[] { envPath }));
 
 var builder = WebApplication.CreateBuilder(args);
 
+//listen to local ip address and not just localhost
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ListenAnyIP(5173); // HTTP port
+    serverOptions.ListenAnyIP(8080); // Additional HTTP port if needed
+});
+
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();

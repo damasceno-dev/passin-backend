@@ -8,15 +8,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="fix: connection string">
-      <change afterPath="$PROJECT_DIR$/EKSAws/cluster-config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EKSAws/steps.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/passin.deploy.cross-argo/passin-aws/argo.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/passin.deploy.cross-argo/passin-aws/repository.yaml" afterDir="false" />
+    <list default="true" id="5c4d465a-4f17-4870-957f-bffe44e88b4b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PassIn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/PassInDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/PassInDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/bin/Debug/net8.0/PassIn.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/PassIn.Api.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/ref/PassIn.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/ref/PassIn.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/refint/PassIn.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Api/obj/Debug/net8.0/refint/PassIn.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/UseCases/Attendees/GetAllByEventId/GetAllAttendeesByEventIdUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/UseCases/Attendees/GetAllByEventId/GetAllAttendeesByEventIdUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/bin/Debug/net8.0/PassIn.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/PassIn.Application.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/ref/PassIn.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/ref/PassIn.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/refint/PassIn.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Application/obj/Debug/net8.0/refint/PassIn.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/ref/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/ref/PassIn.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/refint/PassIn.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PassIn.Infrastructure/obj/Debug/net8.0/refint/PassIn.Infrastructure.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +77,18 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Api/obj/Debug/net8.0/PassIn.Api.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Application/UseCases/Attendees/GetAllByEventId/GetAllAttendeesByEventIdUseCase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Application/obj/Debug/net8.0/PassIn.Application.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PassIn.Exceptions/ResponseErrorJson.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Infrastructure/PassInDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/fernandodamasceno/Coding/CursosRocketSeat/nlw15Unite/TrilhaCSharp/Projeto/PassIn/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/108d6a99788f4ec6b97608290b569ad53400/8e/cf5c6389/DotEnv.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/108d6a99788f4ec6b97608290b569ad53400/e0/e7b207ca/DotEnvOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31827a195a0f44d4baecfd1968e3dad385db0/2a/eb62d619/SqlServerDatabaseCreator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86986e3b5ab142e1a33017545ca2e53926a820/3d/53a02aa0/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8bc9cdb23bc146bcaaae0bb9e45e5d46d9dc00/53/8e49d3b3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8bc9cdb23bc146bcaaae0bb9e45e5d46d9dc00/bc/3501217c/Char.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cf878a1b8ec14c0f8ee161a4fd25910c19c00/b0/dc11d3d9/WebApplicationOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d1186877370a4a8fb269316c8365629b1e55c0/81/13fa72f7/RelationalConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d1186877370a4a8fb269316c8365629b1e55c0/eb/af6c76d8/SingleQueryingEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fcbf4f8a5ab54375abcfa46e8f5896b536c00/e8/f34fa4dc/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
@@ -96,7 +129,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -255,7 +288,10 @@
       <workItem from="1717349255351" duration="7409000" />
       <workItem from="1717414866675" duration="11283000" />
       <workItem from="1717502295845" duration="10532000" />
-      <workItem from="1717600441334" duration="18564000" />
+      <workItem from="1717600441334" duration="22195000" />
+      <workItem from="1717763258571" duration="29000" />
+      <workItem from="1718142355424" duration="1665000" />
+      <workItem from="1718183268501" duration="3518000" />
     </task>
     <task id="LOCAL-00001" summary="Passin backend project">
       <option name="closed" value="true" />
@@ -630,19 +666,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/PassIn.Api/Program.cs</url>
-          <line>19</line>
-          <properties documentPath="$PROJECT_DIR$/PassIn.Api/Program.cs" containingFunctionPresentation="">
-            <startOffsets>
-              <option value="803" />
-            </startOffsets>
-            <endOffsets>
-              <option value="852" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/PassIn.Infrastructure/PassInDbContext.cs</url>
           <line>20</line>
           <properties documentPath="$PROJECT_DIR$/PassIn.Infrastructure/PassInDbContext.cs" containingFunctionPresentation="Method 'OnConfiguring'">
@@ -657,13 +680,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/PassIn.Api/Program.cs</url>
-          <line>47</line>
+          <line>54</line>
           <properties documentPath="$PROJECT_DIR$/PassIn.Api/Program.cs" containingFunctionPresentation="">
             <startOffsets>
-              <option value="1700" />
+              <option value="1930" />
             </startOffsets>
             <endOffsets>
-              <option value="1730" />
+              <option value="1960" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="13" />

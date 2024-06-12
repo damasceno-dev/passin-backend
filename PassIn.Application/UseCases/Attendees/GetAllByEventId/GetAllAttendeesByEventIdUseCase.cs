@@ -41,7 +41,8 @@ namespace PassIn.Application.UseCases.Attendees.GetAllByEventId
             var filteredAttendees = string.IsNullOrWhiteSpace(query)
                 ? eventEntity.Attendees
                 : eventEntity.Attendees.Where(a => a.Name.Contains(query, StringComparison.OrdinalIgnoreCase) ||
-                                                   a.Email.Contains(query, StringComparison.OrdinalIgnoreCase));
+                                                   a.Email.Contains(query, StringComparison.OrdinalIgnoreCase) ||
+                                                   a.Id.ToString().Contains(query, StringComparison.OrdinalIgnoreCase));
 
             var totalAttendees = filteredAttendees.Count();
             var totalPages = (int)Math.Ceiling((double)totalAttendees / pageSize);
